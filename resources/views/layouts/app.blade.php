@@ -17,6 +17,8 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <!-- Scripts -->
+
+
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
@@ -43,6 +45,13 @@
 Book Club - SolDel
 </div>
                 </a>
+
+                </a>
+                <a class="navbar-brand" href="{{ url('/suggestions') }}">
+                    <div style='vertical-align:middle; display:inline;'><img src="/img/icon/suggestion.png" width="30" alt="" />
+Suggestions
+</div>
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -51,27 +60,19 @@ Book Club - SolDel
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
-                    <li class="dropdown">
-                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Works <span class="caret"></span></a>
-                     <ul class="dropdown-menu" role="menu">
 
-                          <li class="dropdown"><a href="{{url('/')}}">Books</a></li>
 
-                       <li><a href="{{url('/suggestion')}}">Suggestions</a></li>
 
-                       @if (Auth::guest())
 
-                       @else
-                       <li role="separator" class="divider"></li>
-                        <li><a href="{{url('/books/create')}}">Add Books</a></li>
-                       @endif
-                     </ul>
-                   </li>
+
+
                     @if (Auth::guest())
                         <li><a href="{{ url('/login') }}">Login</a></li>
                         <li><a href="{{ url('/register') }}">Register</a></li>
                     @else
+                    <li class="dropdown"><a href="{{url('/books')}}">Your Books</a></li>
 
+                 <li><a href="{{url('/user/suggestions')}}">Your Suggestions</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -89,11 +90,7 @@ Book Club - SolDel
                                         {{ csrf_field() }}
                                     </form>
                                 </li>
-                                @if(Entrust::hasRole('admin'))
-                                <li>
-                                    <a href="{{route('user.show')}}">Manage Users</a>
-                                </li>
-                                @endif
+
 
                             </ul>
                         </li>
@@ -103,10 +100,15 @@ Book Club - SolDel
         </div>
     </nav>
 
+
     @yield('content')
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+
+
+<script src="/js/app.js"></script>
+<script src="/js/js.js"></script>
+
 
 </body>
 </html>

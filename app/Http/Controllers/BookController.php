@@ -18,8 +18,8 @@ class BookController extends Controller
     public function index()
     {
 
-      $books = Book::all();
-      return view('home',compact('books'));
+      $books = Book::where('user_id',Auth::user()->id)->get();
+      return view('books.list')->with('books',$books);
     }
     public function show($id){
       $book = Book::find($id);
@@ -29,24 +29,35 @@ class BookController extends Controller
       return view('books.create');
     }
     public function store(Request $request){
-      $title = $request->input('title');
-      $author = $request->input('author');
-      $other = $request->input('other');
-      $description = $request->input('description');
-      $link = $request->input('link');
-      $image = $request->input('image');
-      $user_id =  Auth::user()->id;
+
+      $title = $request->json('title');
+      $google_id = $request->json('google_id');
+      $description = $request->json('description');
+      $google_link_info = $request->json('google_link_info');
+      $google_link_preview = $request->json('google_link_preview');
+      $imageLink = $request->json('imageLink');
+      $author = $request->json('author');
+      $publishDate = $request->json('publishDate');
+
       Book::create([
         'title' => $title,
+        'google_id'=>$google_id,
         'author' => $author,
-        'other' => $other,
+        'image'=>$imageLink,
         'description' => $description,
-        'link' => $link,
-        'image' => $image,
-        'user_id' => $user_id
+        'google_link_info' => $google_link_info,
+        'google_link_preview' => $google_link_preview,
+        'publish_date'=>$publishDate,
+        'user_id' => Auth::user()->id
 
       ]);
-      return redirect()->route('book.index');
+             $response = array(
+                 'status' => 'success',
+                 'msg' => 'ok'
+             );
+             return \Response::json($response);
+
+
     }
 
     public function edit($id){

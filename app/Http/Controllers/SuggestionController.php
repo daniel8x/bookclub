@@ -14,35 +14,68 @@ class SuggestionController extends Controller
     public function show(){
 
 
-    $suggestions = Suggestion::all();
+    $suggestions = Suggestion::with('book','user')->get();
+
+    // $jsonSuggestion = array();
+    // $i = 0;
+    // while ($i < Suggestion::with('book','user')->get()->count()){
+    //     $jsonSuggestion[$i] = 'test';
+    //     $i++;
+    // }
+    // json_encode($jsonSuggestion);
+    // echo json_decode($jsonSuggestion,0);
+//$test = json_encode($test);
 
 
-    $book_id = $suggestions->pluck('book_id');
 
-    $user_id = $suggestions->pluck('user_id');
-    $data = array();
-    $flag = '';
-for ($i = 0; $i < $suggestions->count();$i++)
-{
-      //$flag = Book::find($book_id[$i])->title;
 
-        $data[$i]['books_name'] = Book::find($book_id[$i])->title;
+    return view('suggestions.show')->with('suggestions',$suggestions);
 
-        $data[$i]['user_name'] = User::find($user_id[$i])->name;
 
-}
-
-    return view('suggestions.show')->with('data',$data);
 
     }
-    public function create($id)
+
+
+    public function usershow(){
+
+      $suggestions = Suggestion::with('book')->where('user_id', Auth::user()->id)->get();
+      return view('suggestions.usershow')->with('suggestions',$suggestions);
+
+    }
+    public function delete($id){
+        $suggestions = Suggestion::find($id);
+        $suggestions->delete();
+        $response = array(
+            'status' => 'success',
+            'msg' => 'ok'
+        );
+        return \Response::json($response);
+      }
+    public function store(Request $request)
     {
-      $user_id = Auth::id();
+      // $user_id = Auth::id();
+      // Suggestion::create([
+      //   'book_id' => $id,
+      //   'user_id' => $user_id
+      // ]);
+      // return redirect()->route('suggestion.show');
+      $book_id = $request->json('book_id');
+      $reason = $request->json('reason');
+      $rating = $request->json('rating');
+
       Suggestion::create([
-        'book_id' => $id,
-        'user_id' => $user_id
+        'book_id' => $book_id,
+        'rating_point'=>$rating,
+        'reason' => $reason,
+        'user_id' => Auth::user()->id
+
       ]);
-      return redirect()->route('suggestion.show');
+             $response = array(
+                 'status' => 'success',
+                 'msg' => 'ok'
+             );
+             return \Response::json($response);
+
 
     }
 }

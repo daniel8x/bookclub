@@ -5,17 +5,42 @@ Book Club
 @section('content')
 <div class="container">
         <span style="text-align: center;"><h2>Suggestions</h2></span>
-      <ul class="list-group">
-        @foreach ($data as $key)
 
-        <li class="list-group-item">
+          <div class="panel-group" id="accordion">
 
-        {{$key['books_name']}}
-             <span style="text-align:right;float:right;"><button type="button" class="btn btn-primary">{{$key['user_name']}} </button>
-        </span>
+              @foreach($suggestions as $suggestion)
 
-              </li>
-      @endforeach
-      </ul>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                  {{ $suggestion->book->title }}</a>
+                <button type="button" class="btn btn-success">Pick</button>
+
+              </h4>
+            </div>
+
+
+
+            <div id="collapse1" class="panel-collapse collapse in">
+              <div class="panel-body">
+
+                <span>Recommended by :   {{ $suggestion->user->name }}</span><br>
+
+
+
+
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+  @endforeach
+
+        </div>
     </div>
 @stop

@@ -18,7 +18,7 @@ class PagesController extends Controller
         $books = Book::all();
         return view('books.list',compact('books'));
       }else{
-        $books = Book::all();
+
         return view('home',compact('books'));
       }
 

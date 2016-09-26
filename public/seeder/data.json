@@ -1,0 +1,625 @@
+{
+ "kind": "books#volumes",
+ "totalItems": 1294,
+ "items": [
+  {
+   "kind": "books#volume",
+   "id": "t_U4oQ7EBPwC",
+   "etag": "HP7P5DaFwOo",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/t_U4oQ7EBPwC",
+   "volumeInfo": {
+    "title": "Emergency and Continous Exposure Limits for Selected Airborne Contaminants",
+    "publisher": "National Academies Press",
+    "authors": [
+     "J. K. Rowling",
+     "John Tiffany",
+     "Jack Thorne"
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=t_U4oQ7EBPwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=t_U4oQ7EBPwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=t_U4oQ7EBPwC&pg=PA41&dq=continous&hl=&cd=1&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=t_U4oQ7EBPwC&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Emergency_and_Continous_Exposure_Limits.html?hl=&id=t_U4oQ7EBPwC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=t_U4oQ7EBPwC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "MgmerYqzvugC",
+   "etag": "AZJqYAfowfg",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/MgmerYqzvugC",
+   "volumeInfo": {
+    "title": "An Analysis of the Use of Continous Quality Improvement in the Retention of African American Males at Historically Black Colleges and Universities",
+    "publisher": "ProQuest",
+    "publishedDate": "2008",
+    "description": "The purpose of the study was to focus on the application of Continuous Quality Improvement by Academic Support Directors when integrating retention strategies for African American male students at two-year, four-year public, and four-year private HBCUs. To complete this study, a quantitative web-based instrument was sent to 99 Academic Support directors at 99 HBCUs that serve male undergraduate populations. The instrument consisted of 78 Likert-like scale and two open-ended questions. The return rate was 55.4% (57).",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9780549981503"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "0549981500"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 186,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=MgmerYqzvugC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=MgmerYqzvugC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=MgmerYqzvugC&pg=PA62&dq=continous&hl=&cd=2&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=MgmerYqzvugC&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/An_Analysis_of_the_Use_of_Continous_Qual.html?hl=&id=MgmerYqzvugC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=MgmerYqzvugC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "TiwoAQAAMAAJ",
+   "etag": "C1DrnXcaHy0",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/TiwoAQAAMAAJ",
+   "volumeInfo": {
+    "title": "Economic aspects of continous casting of steel",
+    "authors": [
+     "United Nations. Economic Commission for Europe"
+    ],
+    "publishedDate": "1968",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "IND:30000087892166"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 210,
+    "printType": "BOOK",
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=TiwoAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=TiwoAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=TiwoAQAAMAAJ&q=continous&dq=continous&hl=&cd=3&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=TiwoAQAAMAAJ&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Economic_aspects_of_continous_casting_of.html?hl=&id=TiwoAQAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=TiwoAQAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "FeV42BoWoW8C",
+   "etag": "IsCe4SXmTZQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/FeV42BoWoW8C",
+   "volumeInfo": {
+    "title": "a study on the continous counter-curfend difusion of beet sugar",
+    "authors": [
+     "j.c. brier, h.h. yung"
+    ],
+    "publishedDate": "1955",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UOMDLP:bab3247:0001.001"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=FeV42BoWoW8C&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=FeV42BoWoW8C&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=FeV42BoWoW8C&q=continous&dq=continous&hl=&cd=4&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=FeV42BoWoW8C&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/a_study_on_the_continous_counter_curfend.html?hl=&id=FeV42BoWoW8C"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=FeV42BoWoW8C&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "2JxaWZb7FQgC",
+   "etag": "OqE6za2RWdc",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/2JxaWZb7FQgC",
+   "volumeInfo": {
+    "title": "CIRCUIT THEORY",
+    "subtitle": "CONTINOUS AND DISCRETE-TIME SYSTEMS, ELEMENTS OF NETWORK SYNTHESIS",
+    "authors": [
+     "C. P. KURIAKOSE"
+    ],
+    "publisher": "PHI Learning Pvt. Ltd.",
+    "publishedDate": "2005-01-01",
+    "description": "This book is designed to meet a felt need for a concise but systematic and rigorous presentation of Circuit Theory which forms the core of electrical engineering. The book is presented in four parts : Fundamental concepts in electrical engineering, Linear-time invariant systems, Advanced topics in network analysis, and Elements of network synthesis. A variety of illustrative examples, solved problems and exercises carefully guide the student from basic of electricity to the heart of circuit theory, which is supported by the mathematical tools of transforms. The inclusion of a chapter on P Spice and MATLAB is sure to whet the interest of the reader for further exploration of the subject-especially the advanced topics. Intended primarily as a textbook for the undergraduate students of electrical, electronics, and computer science engineering, this book would also be useful for postgraduate students and professionals for reference and revision of fundamentals. The book should also serve as a source book for candidates preparing for examinations conducted by professional bodies like IE, IETE, IEEE.",
+    "industryIdentifiers": [
+     {
+      "type": "ISBN_13",
+      "identifier": "9788120326439"
+     },
+     {
+      "type": "ISBN_10",
+      "identifier": "8120326431"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": true
+    },
+    "pageCount": 528,
+    "printType": "BOOK",
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.1",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=2JxaWZb7FQgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=2JxaWZb7FQgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=2JxaWZb7FQgC&printsec=frontcover&dq=continous&hl=&cd=5&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=2JxaWZb7FQgC&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/CIRCUIT_THEORY.html?hl=&id=2JxaWZb7FQgC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "FOR_SALE",
+    "isEbook": true,
+    "listPrice": {
+     "amount": 6.44,
+     "currencyCode": "USD"
+    },
+    "retailPrice": {
+     "amount": 4.96,
+     "currencyCode": "USD"
+    },
+    "buyLink": "http://books.google.com/books?id=2JxaWZb7FQgC&dq=continous&hl=&buy=&source=gbs_api",
+    "offers": [
+     {
+      "finskyOfferType": 1,
+      "listPrice": {
+       "amountInMicros": 6440000.0,
+       "currencyCode": "USD"
+      },
+      "retailPrice": {
+       "amountInMicros": 4960000.0,
+       "currencyCode": "USD"
+      }
+     }
+    ]
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "PARTIAL",
+    "embeddable": true,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": true,
+     "acsTokenLink": "http://books.google.com/books/download/CIRCUIT_THEORY-sample-pdf.acsm?id=2JxaWZb7FQgC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=2JxaWZb7FQgC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "SAMPLE",
+    "quoteSharingAllowed": false
+   },
+   "searchInfo": {
+    "textSnippet": "This book is designed to meet a felt need for a concise but systematic and rigorous presentation of Circuit Theory which forms the core of electrical engineering."
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "rZrQAAAAMAAJ",
+   "etag": "uwQAzq5uu6A",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/rZrQAAAAMAAJ",
+   "volumeInfo": {
+    "title": "Ultimate Moments and Shears in Continous Reinforced Concrete Beams",
+    "authors": [
+     "George Campbell Ernst"
+    ],
+    "publishedDate": "1960",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "WISC:89042700237"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 37,
+    "printType": "BOOK",
+    "categories": [
+     "Girders, Continuous"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.1.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=rZrQAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=rZrQAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=rZrQAAAAMAAJ&q=continous&dq=continous&hl=&cd=6&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=rZrQAAAAMAAJ&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Ultimate_Moments_and_Shears_in_Continous.html?hl=&id=rZrQAAAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=rZrQAAAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "UhpPAAAAMAAJ",
+   "etag": "NzTYRduGZoQ",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/UhpPAAAAMAAJ",
+   "volumeInfo": {
+    "title": "Strategic Planning, Systems Analysis, and Database Design",
+    "subtitle": "The Continous Flow Approach",
+    "authors": [
+     "Mark L. Gillenson",
+     "Robert Goldberg"
+    ],
+    "publisher": "Wiley-Interscience",
+    "publishedDate": "1984",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UOM:39015006050861"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 228,
+    "printType": "BOOK",
+    "categories": [
+     "Science"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "0.1.0.0.preview.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=UhpPAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=UhpPAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=UhpPAAAAMAAJ&q=continous&dq=continous&hl=&cd=7&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=UhpPAAAAMAAJ&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Strategic_Planning_Systems_Analysis_and.html?hl=&id=UhpPAAAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=UhpPAAAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "Ew_nalevWGsC",
+   "etag": "7MvUgRkYvsE",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/Ew_nalevWGsC",
+   "volumeInfo": {
+    "title": "a spectralrepresentation method for continous-time stochastic system estimation based on analog data records",
+    "publishedDate": "1991",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UOM:39015022291614"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=Ew_nalevWGsC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=Ew_nalevWGsC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=Ew_nalevWGsC&q=continous&dq=continous&hl=&cd=8&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=Ew_nalevWGsC&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/a_spectralrepresentation_method_for_cont.html?hl=&id=Ew_nalevWGsC"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=Ew_nalevWGsC&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "qfVrAAAAMAAJ",
+   "etag": "sdsw9Ukahmc",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/qfVrAAAAMAAJ",
+   "volumeInfo": {
+    "title": "Microdialysis and Continous Glucose Monitoring",
+    "subtitle": "Towards Wafer Integration",
+    "authors": [
+     "Thomas Laurell"
+    ],
+    "publishedDate": "1995",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UOM:39015041547079"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "printType": "BOOK",
+    "categories": [
+     "Diabetes"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=qfVrAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=qfVrAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=qfVrAAAAMAAJ&q=continous&dq=continous&hl=&cd=9&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=qfVrAAAAMAAJ&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Microdialysis_and_Continous_Glucose_Moni.html?hl=&id=qfVrAAAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=qfVrAAAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  },
+  {
+   "kind": "books#volume",
+   "id": "1O5RAAAAMAAJ",
+   "etag": "0C3tMW4w9zs",
+   "selfLink": "https://www.googleapis.com/books/v1/volumes/1O5RAAAAMAAJ",
+   "volumeInfo": {
+    "title": "Elastic and plastic properties of soils and their influence on the continous support of rigid pavements",
+    "authors": [
+     "Spencer J. Buchanan",
+     "Fuad I. Khuri",
+     "United States. Army. Corps of Engineers"
+    ],
+    "publishedDate": "1954",
+    "industryIdentifiers": [
+     {
+      "type": "OTHER",
+      "identifier": "UOM:39015002102989"
+     }
+    ],
+    "readingModes": {
+     "text": false,
+     "image": false
+    },
+    "pageCount": 180,
+    "printType": "BOOK",
+    "categories": [
+     "Technology & Engineering"
+    ],
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "preview-1.0.0",
+    "imageLinks": {
+     "smallThumbnail": "http://books.google.com/books/content?id=1O5RAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+     "thumbnail": "http://books.google.com/books/content?id=1O5RAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+    },
+    "language": "en",
+    "previewLink": "http://books.google.com/books?id=1O5RAAAAMAAJ&q=continous&dq=continous&hl=&cd=10&source=gbs_api",
+    "infoLink": "http://books.google.com/books?id=1O5RAAAAMAAJ&dq=continous&hl=&source=gbs_api",
+    "canonicalVolumeLink": "http://books.google.com/books/about/Elastic_and_plastic_properties_of_soils.html?hl=&id=1O5RAAAAMAAJ"
+   },
+   "saleInfo": {
+    "country": "US",
+    "saleability": "NOT_FOR_SALE",
+    "isEbook": false
+   },
+   "accessInfo": {
+    "country": "US",
+    "viewability": "NO_PAGES",
+    "embeddable": false,
+    "publicDomain": false,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+     "isAvailable": false
+    },
+    "pdf": {
+     "isAvailable": false
+    },
+    "webReaderLink": "http://books.google.com/books/reader?id=1O5RAAAAMAAJ&hl=&printsec=frontcover&output=reader&source=gbs_api",
+    "accessViewStatus": "NONE",
+    "quoteSharingAllowed": false
+   }
+  }
+ ]
+}

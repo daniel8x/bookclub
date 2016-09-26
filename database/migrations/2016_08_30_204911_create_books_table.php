@@ -15,18 +15,22 @@ class CreateBooksTable extends Migration
     {
         Schema::create('books', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('google_id');
             $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->string('author');
-            $table->string('other');
+            $table->string('publish_date');
+            $table->string('google_link_info');
+            $table->string('google_link_preview');
+
             $table->string('description');
-            $table->string('link');
             $table->string('image');
             $table->foreign('user_id')->references('id')->on('users')
             ->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -35,6 +39,6 @@ class CreateBooksTable extends Migration
      */
     public function down()
     {
-        Schema::drop('books');
+        Schema::dropIfExists('books');
     }
 }

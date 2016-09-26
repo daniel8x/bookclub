@@ -47,15 +47,33 @@ Route::get('/books/{id}', [
 
 ])->middleware('auth');
 
-Route::get('/suggestion',[
+
+
+
+Route::get('/suggestions',[
 'as' => 'suggestion.show',
 'uses' => 'SuggestionController@show'
   ])->middleware('auth');
 
-  Route::get('/suggestion/{id}',[
-    'as' => 'suggestion.create',
-    'uses' => 'SuggestionController@create'
-  ])->middleware('auth');
+
+  Route::post('/user/suggestions/create',[
+  'as' => 'suggestion.user.create',
+  'uses' => 'SuggestionController@store'
+    ])->middleware('auth');
+
+
+Route::get('/user/suggestions/',[
+  'as'=> 'suggestion.user.show',
+  'uses'=> 'SuggestionController@usershow'
+])->middleware('auth');
+
+Route::get('/user/suggestions/delete/{id}',[
+  'as'=> 'suggestion.user.delete',
+  'uses'=> 'SuggestionController@delete'
+])->middleware('auth');
+
+
+
 
 Route::get('/users',[
     'as' => 'user.show',
