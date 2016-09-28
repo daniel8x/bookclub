@@ -3,7 +3,19 @@
 Book Club
 @stop
 @section('content')
-<div class="container">
+<div class="container" id="bodyBox">
+
+
+    <div class="alert alert-success">
+    <strong>Success!</strong><br>
+  </div>
+  <div class="alert alert-danger">
+  <strong>Exists!</strong><br>
+</div>
+
+
+
+  <div id="searchBox">
     <span style="text-align: center;"><h2>Pick a book...</h2></span>
 
 <div class="row search">
@@ -22,14 +34,41 @@ Book Club
 </div>
 
 
+</div>
+
+@if ($books == '')
+
+@else
+<script type="text/javascript">
+$(document).ready(function(){
+
+        $("#searchBox").hide();
+
+});
+</script>
+<div  id="pickedBook" >
+  <div class="panel panel-primary">
+<div class="panel-heading">Enjoy your selection...</div>
+ <div class="panel-body">
+<img src="{{$books->image}}" class="img-rounded" alt="{{$books->title}}" width="150" height="200"><br>
+<span><strong>Title: </strong><br>{{$books->title}}</span><br>
+<span><strong>Author: </strong><br>{{$books->author}}</span><br>
+<span><strong>Description: </strong><br>{{$books->description}}</span><br>
+<button type="button" name="button" class="btn btn-danger">Check Status...</button>
+<button type="button" name="button" class="btn btn-warning">Set a Goal...</button>
+<button type="button" name="button" class="btn btn-primary">Staring a Diary...</button>
+<button type="button" name="button" class="btn btn-success" onclick="doneBook({{$books->id}})">Done Reading...</button>
+</div>
+</div>
+</div>
+
+@endif
 
 
 
 
-
-  
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -47,7 +86,7 @@ Book Club
         </div>
     </div>
 
-</div>
+</div> -->
 
 <!-- <div class="container">
     <div class='row'>

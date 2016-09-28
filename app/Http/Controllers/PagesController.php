@@ -18,8 +18,13 @@ class PagesController extends Controller
         $books = Book::all();
         return view('books.list',compact('books'));
       }else{
+        if (Book::where('selected','=',1)->exists()){
+        $book = Book::where('selected','=',1)->first();
+        return view('home')->with('books',$book);
+      }else {
+        return view('home')->with('books','');
+      }
 
-        return view('home',compact('books'));
       }
 
     }

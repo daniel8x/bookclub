@@ -39,6 +39,14 @@ Route::get('/books/{id}/delete',[
   'as'=>'book.destroy',
   'uses'=>'BookController@destroy'
 ])->middleware('auth');
+Route::get('/books/pick/{id}',[
+  'as'=>'book.pick',
+  'uses'=>'BookController@pick'
+])->middleware('auth');
+Route::get('/books/done/{id}',[
+  'as'=>'book.done',
+  'uses'=>'BookController@done'
+])->middleware('auth');
 
 
 Route::get('/books/{id}', [

@@ -4,7 +4,7 @@ Book Club
 @stop
 @section('content')
 <div class="container">
-        <span style="text-align: center;"><h2>Suggestions</h2></span>
+        <span style="text-align: center;"><h2>Your Suggestions</h2></span>
       <ul class="list-group" id="suggestionList">
         @foreach($suggestions as $suggestion)
 

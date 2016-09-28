@@ -8,8 +8,8 @@ var i =0;
 function callAjaxBook(value){
   $.ajax({
     type: "GET",
-    url: "http://book.app/seeder/data.json",
-//  url: "https://www.googleapis.com/books/v1/volumes?q=" + value + "&key=AIzaSyCp78_hIsVtXn7_LwnZMWM53yqOS8Yiyqg",
+//    url: "http://book.app/seeder/data.json",
+  url: "https://www.googleapis.com/books/v1/volumes?q=" + value + "&key=AIzaSyCp78_hIsVtXn7_LwnZMWM53yqOS8Yiyqg",
     cache: false,
     dataType: "json",
     beforeSend:function(){
@@ -36,8 +36,8 @@ function callAjaxBook(value){
           // if (data.items[i].volumeInfo.hasOwnProperty('industryIdentifiers'))
           // if (data.items[i].volumeInfo.industryIdentifiers.type        == 'ISBN_13') result += '<a href="https://www.amazon.com/gp/search/ref=sr_adv_b/?search-alias=stripbooks&unfiltered=1&field-keywords=&field-author=&field-title=&field-isbn=' +data.items[i].volumeInfo.industryIdentifiers.identifier+'&field-publisher=&node=&field-p_n_condition-type=&p_n_feature_browse-bin=&field-age_range=&field-language=&field-dateop=During&field-datemod=&field-dateyear=&sort=relevanceexprank&Adv-Srch-Books-Submit.x=18&Adv-Srch-Books-Submit.y=15" target="_blank">Amazon </a>';
 
-          result += '</span><br>';
-          result += '<button onclick="sendBooks(\''+data.items[i].id+'\')" type="submit" class="btn btn-success btn-xs">Save</button> <button type="submit" class="btn btn-danger btn-xs">Suggestion</button>';
+          result += '</span> - ';
+          result += ' <button onclick="sendBooks(\''+data.items[i].id+'\')" type="submit" class="btn btn-success btn-sm">Add to your book-shelf</button>';
 
           result += '<div style="clear:both"></div> <div id="description"><strong>Description: </strong><span>'+data.items[i].volumeInfo.description+'</span></div></div></div></div>';
           result += "</div>";
@@ -81,9 +81,11 @@ $.ajax({
     },
       success: function (data) {
         if (data.status == 'success') {
-                    console.log(data.msg);
+                    $('.alert-success').show(1000);
+                      $('.alert-success').hide(1000);
                 } else {
-                    console.log(data.msg);
+                  $('.alert-danger').show(2000);
+                    $('.alert-danger').hide(2000);
                 }
       },
       error: function (data) {
@@ -157,7 +159,9 @@ $.ajax({
     },
       success: function (data) {
         if (data.status == 'success') {
-                    console.log(data.msg);
+            $("#bookList").load(location.href + " #bookList");
+            $('.alert-success').show(1000);
+              $('.alert-success').hide(1000);
                 } else {
                     console.log(data.msg);
                 }
@@ -170,7 +174,50 @@ $.ajax({
 
 
 }
+function submitPickBook(id){
+  $.ajax({
+    url: '/books/pick/'+id,
+    type: 'get',
+    beforeSend: function(){
 
+    },
+    success: function(data){
+      if (data.status == 'exist') {
+        $('.alert-danger').show(1000);
+          $('.alert-danger').hide(1000);
+          window.location.href = "http://book.app";
+
+      }else{
+        $('.alert-success').show(1000);
+          $('.alert-success').hide(1000);
+           window.location.href = "http://book.app";
+      }
+
+    },
+    error: function(){
+
+    }
+  });
+}
+function doneBook(id){
+  $.ajax({
+    url: '/books/done/'+id,
+    type: 'get',
+    beforeSend: function(){
+
+    },
+    success: function(data){
+      if (data.status == 'success') {
+            $("#searchBox").show();
+            $("#pickedBook").hide();
+          }
+
+    },
+    error: function(){
+
+    }
+  });
+}
 function deleteSuggestion(id){
   $.ajax({
     url: '/user/suggestions/delete/'+id,

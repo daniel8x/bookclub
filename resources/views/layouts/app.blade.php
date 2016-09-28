@@ -15,6 +15,8 @@
     <link href="/css/style.css" rel="stylesheet">
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="/js/app.js"></script>
+    <script src="/js/js.js"></script>
 
     <!-- Scripts -->
 
@@ -106,8 +108,6 @@ Suggestions
     <!-- Scripts -->
 
 
-<script src="/js/app.js"></script>
-<script src="/js/js.js"></script>
 
 
 </body>
