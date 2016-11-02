@@ -11,85 +11,85 @@
 |
 */
 
-Route::get('/','PagesController@index');
-Route::get('/books',[
-  'as' => 'book.index',
-  'uses' => 'BookController@index']);
+Route::get('/','PagesController@index')->middleware('authCAS');
+// Route::get('/books',[
+//   'as' => 'book.index',
+//   'uses' => 'BookController@index']);
+//
+// Route::get('/books/create',[
+//   'as' => 'book.create',
+//   'uses' => 'BookController@create'
+// ])->middleware('auth');
+//
+// Route::post('/books/create', [
+//   'as' => 'book.store',
+//   'uses' => 'BookController@store'
+// ])->middleware('auth');
+//
+// Route::get('/books/{id}/edit',[
+//   'as' => 'book.edit',
+//   'uses' => 'BookController@edit'
+// ])->middleware('auth');
+// Route::post('/books/{id}',[
+//   'as'=> 'book.update',
+//   'uses' => 'BookController@update'
+// ])->middleware('auth');
+//
+// Route::get('/books/{id}/delete',[
+//   'as'=>'book.destroy',
+//   'uses'=>'BookController@destroy'
+// ])->middleware('auth');
+// Route::get('/books/pick/{id}',[
+//   'as'=>'book.pick',
+//   'uses'=>'BookController@pick'
+// ])->middleware('auth');
+// Route::get('/books/done/{id}',[
+//   'as'=>'book.done',
+//   'uses'=>'BookController@done'
+// ])->middleware('auth');
+//
+//
+// Route::get('/books/{id}', [
+//   'as' => 'book.show',
+//   'uses' =>  'BookController@show'
+//
+// ])->middleware('auth');
+//
+//
+//
+//
+// Route::get('/suggestions',[
+// 'as' => 'suggestion.show',
+// 'uses' => 'SuggestionController@show'
+//   ])->middleware('auth');
+//
+//
+//   Route::post('/user/suggestions/create',[
+//   'as' => 'suggestion.user.create',
+//   'uses' => 'SuggestionController@store'
+//     ])->middleware('auth');
+//
+//
+// Route::get('/user/suggestions/',[
+//   'as'=> 'suggestion.user.show',
+//   'uses'=> 'SuggestionController@usershow'
+// ])->middleware('auth');
+//
+// Route::get('/user/suggestions/delete/{id}',[
+//   'as'=> 'suggestion.user.delete',
+//   'uses'=> 'SuggestionController@delete'
+// ])->middleware('auth');
+//
+//
+//
+//
+// Route::get('/users',[
+//     'as' => 'user.show',
+//     'uses' => 'UserController@show'
+// ])->middleware('auth');
 
-Route::get('/books/create',[
-  'as' => 'book.create',
-  'uses' => 'BookController@create'
-])->middleware('auth');
-
-Route::post('/books/create', [
-  'as' => 'book.store',
-  'uses' => 'BookController@store'
-])->middleware('auth');
-
-Route::get('/books/{id}/edit',[
-  'as' => 'book.edit',
-  'uses' => 'BookController@edit'
-])->middleware('auth');
-Route::post('/books/{id}',[
-  'as'=> 'book.update',
-  'uses' => 'BookController@update'
-])->middleware('auth');
-
-Route::get('/books/{id}/delete',[
-  'as'=>'book.destroy',
-  'uses'=>'BookController@destroy'
-])->middleware('auth');
-Route::get('/books/pick/{id}',[
-  'as'=>'book.pick',
-  'uses'=>'BookController@pick'
-])->middleware('auth');
-Route::get('/books/done/{id}',[
-  'as'=>'book.done',
-  'uses'=>'BookController@done'
-])->middleware('auth');
 
 
-Route::get('/books/{id}', [
-  'as' => 'book.show',
-  'uses' =>  'BookController@show'
-
-])->middleware('auth');
-
-
-
-
-Route::get('/suggestions',[
-'as' => 'suggestion.show',
-'uses' => 'SuggestionController@show'
-  ])->middleware('auth');
-
-
-  Route::post('/user/suggestions/create',[
-  'as' => 'suggestion.user.create',
-  'uses' => 'SuggestionController@store'
-    ])->middleware('auth');
-
-
-Route::get('/user/suggestions/',[
-  'as'=> 'suggestion.user.show',
-  'uses'=> 'SuggestionController@usershow'
-])->middleware('auth');
-
-Route::get('/user/suggestions/delete/{id}',[
-  'as'=> 'suggestion.user.delete',
-  'uses'=> 'SuggestionController@delete'
-])->middleware('auth');
-
-
-
-
-Route::get('/users',[
-    'as' => 'user.show',
-    'uses' => 'UserController@show'
-])->middleware('auth');
-
-
-
-Auth::routes();
-Route::get('/logout','PagesController@index');
-Route::get('/home', 'PagesController@index');
+// Auth::routes();
+// Route::get('/logout','PagesController@index');
+// Route::get('/home', 'PagesController@index');
